@@ -14,6 +14,19 @@ images.forEach(image => {
 })
 ```
 - map
+  - By far the most common helper function for front end web developers
+  - Remember to use return keyword in each pass
+```
+var images = [
+  { height: '34px', width: '39px' },
+  { height: '54px', width: '19px' },
+  { height: '83px', width: '75px' },
+];
+
+var heights= images.map(image => {
+    return image.height;
+})
+```
 - filter
 - find
 - every
