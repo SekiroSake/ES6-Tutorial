@@ -1,2 +1,9 @@
 # ES6-Tutorial
-ES6-Tutorial
+## Array Helper Methods
+- forEach
+- map
+- filter
+- find
+- every
+- some
+- reduce
