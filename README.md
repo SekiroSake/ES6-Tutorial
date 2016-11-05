@@ -67,6 +67,19 @@ function pluck(array, property) {
 }
 ```
 - filter
+Example
+```
+products=[{"name":"apple",
+          "type":"fruit"},
+          {name":"celery",
+          "type":"vegetable"}];
+       
+products.filter(function(product){
+    return product.type === "fruit";      
+});
+
+       
+```
 - find
 - every
 - some
