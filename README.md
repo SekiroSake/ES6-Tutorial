@@ -51,9 +51,9 @@ var paints = [ { color: 'red' }, { color: 'blue' }, { color: 'yellow' }];
 pluck(paints, 'color'); // returns ['red', 'yellow', 'blue'];
 ```
 
-*Hint:
+*Hint:*
 
-*Remember that you can access a property on an object by using square bracket notation. For example...
+*Remember that you can access a property on an object by using square bracket notation. For example...*
 ```
 var person = { name: 'Bill' };
 person['name'] // returns 'Bill'
