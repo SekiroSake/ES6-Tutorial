@@ -1,6 +1,6 @@
 # ES6-Tutorial
 ### Array Helper Methods(The goal is to stay away from for loops)
-## forEach
+# forEach
 ```
 var images = [
   { height: 10, width: 30 },
@@ -13,7 +13,7 @@ images.forEach(image => {
     areas.push(image.height * image.width);
 })
 ```
-## map
+# map
   - By far the most common helper function for front end web developers
   - Remember to use return keyword in each pass
 ```
@@ -66,7 +66,7 @@ function pluck(array, property) {
     });
 }
 ```
-## filter
+# filter
 Example
 ```
 products=[{"name":"apple",
@@ -117,7 +117,7 @@ function reject(array, iteratorFunction) {
 }
 ```
 
-## find
+# find
 ```
 var users = [
   { id: 1, admin: false },
@@ -131,6 +131,6 @@ admin = users.find(user => {
     return user.admin === true;
 })
 ```
-## every
-## some
-## reduce
+# every
+# some
+# reduce
