@@ -1,6 +1,6 @@
 # ES6-Tutorial
-## Array Helper Methods(The goal is to stay away from for loops)
-- forEach
+### Array Helper Methods(The goal is to stay away from for loops)
+## forEach
 ```
 var images = [
   { height: 10, width: 30 },
@@ -13,7 +13,7 @@ images.forEach(image => {
     areas.push(image.height * image.width);
 })
 ```
-- map
+## map
   - By far the most common helper function for front end web developers
   - Remember to use return keyword in each pass
 ```
@@ -40,7 +40,7 @@ var speeds = trips.map( trip => {
 });
 ```
 
-## Really Hard - Implementing 'Pluck'
+### Really Hard - Implementing 'Pluck'
 
 This is a hard one!
 Implement a 'pluck' function.  Pluck should accept an array and a string representing a property name and return an  array containing that property from each object. 
@@ -66,7 +66,7 @@ function pluck(array, property) {
     });
 }
 ```
-- filter
+## filter
 Example
 ```
 products=[{"name":"apple",
@@ -80,13 +80,13 @@ products.filter(function(product){
 
        
 ```
-## Hard question for filter
+### Hard question for filter
 ### Challenging! Implementing 'reject'.
 
 This is a hard one!  Create a function called 'reject'.  Reject should work in the opposite way of 'filter' - if a function returns 'true', the item should *not* be included in the new array.  Hint: you can reuse filter.
 
 
-- For example:
+## For example:
 ```
 var numbers = [10, 20, 30];
 var lessThanFifteen = reject(numbers, function(number){
@@ -94,7 +94,7 @@ var lessThanFifteen = reject(numbers, function(number){
 }); 
 lessThanFifteen // [ 10 ];
 ```
-- solution
+## solution
 ```
 function reject(array, iteratorFunction) {
   var firstArray = array.filter(arrayItem =>{
@@ -117,7 +117,7 @@ function reject(array, iteratorFunction) {
 }
 ```
 
-- find
+## find
 ```
 var users = [
   { id: 1, admin: false },
@@ -131,6 +131,6 @@ admin = users.find(user => {
     return user.admin === true;
 })
 ```
-- every
-- some
-- reduce
+## every
+## some
+## reduce
