@@ -92,6 +92,7 @@ var numbers = [10, 20, 30];
 var lessThanFifteen = reject(numbers, function(number){
   return number > 15;
 }); 
+lessThanFifteen // [ 10 ];
 ```
 - solution
 ```
@@ -115,7 +116,7 @@ function reject(array, iteratorFunction) {
  
 }
 ```
-lessThanFifteen // [ 10 ];
+
 - find
 - every
 - some
