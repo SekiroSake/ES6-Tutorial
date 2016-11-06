@@ -80,6 +80,42 @@ products.filter(function(product){
 
        
 ```
+## Hard question for filter
+### Challenging! Implementing 'reject'.
+
+This is a hard one!  Create a function called 'reject'.  Reject should work in the opposite way of 'filter' - if a function returns 'true', the item should *not* be included in the new array.  Hint: you can reuse filter.
+
+
+- For example:
+```
+var numbers = [10, 20, 30];
+var lessThanFifteen = reject(numbers, function(number){
+  return number > 15;
+}); 
+```
+- solution
+```
+function reject(array, iteratorFunction) {
+  var firstArray = array.filter(arrayItem =>{
+      return iteratorFunction(arrayItem);
+  });
+
+  
+ return array.filter(arrayItem => {
+     console.log("arrayItem: " + arrayItem);
+     for(var i = 0; i <= firstArray.length; i++){
+           
+         if(firstArray[i] === arrayItem){
+           
+              return false;
+         }
+        
+     }
+  return true;});
+ 
+}
+```
+lessThanFifteen // [ 10 ];
 - find
 - every
 - some
